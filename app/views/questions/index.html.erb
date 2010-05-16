@@ -1,0 +1,37 @@
+<h1>Listing Questions</h1>
+
+<table>
+  <tr>
+    <th>Question</th>
+    <th>Book</th>
+    <th>Page number</th>
+    <th></th>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%=h question.question %></td>
+    <td><%=h question.book %></td>
+    <td><%=h question.page_number %></td>
+    <td class="buttons">
+      <%= link_to 'Answer', question %>
+      <%# link_to 'Edit', edit_question_path(question) %>
+      <%# link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+<% form_for :question, :url=> questions_path, :html => {:method => 'get'} do |f| %>
+  <%= f.error_messages %>
+
+    <%= render :partial => 'form', :locals => {:f => f, :button_text => 'search' } %>
+
+
+<% end %>
+<br />
+
+<%= link_to 'New question', new_question_path %>

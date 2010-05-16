@@ -1,0 +1,16 @@
+<p>
+  <%= f.label :book %><br />
+  <%= f.collection_select(:book_id, @current_user.books, :id, :title)  %>
+</p>
+
+<p>
+  <%= f.label :page_number %><br />
+  <%= f.text_field :page_number, :size => 4 %>
+</p>
+<p>
+    <%= f.label :number %><br />
+    <%= f.text_field :number, :size => 4 %>
+</p>
+<p>
+  <%= f.submit button_text %>
+</p>

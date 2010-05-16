@@ -1,0 +1,30 @@
+<p>
+  <b>Question:</b>
+  <%=h @question.question %>
+</p>
+
+<p>
+  <b>Book:</b>
+  <%=h @question.book %>
+</p>
+
+<p>
+  <b>Page number:</b>
+  <%=h @question.page_number %>
+</p>
+
+
+<div id="answers">
+  <h3>Answers</h3>
+  <%= render :partial => 'answers/answer', :collection => @question.answers %>
+</div>  
+
+<div>
+  <h3>Answer this question</h3>
+  <% semantic_form_for @answer do |f| -%>
+  <% f.inputs "Basic", :id => "basic" do %>
+    <%= f.hidden_field :question_id, :value => @answer.question.id %>
+    <%= render :partial => "answers/form", :locals => { :f => f } %>
+  <% end %>
+  <% end -%>
+</div>

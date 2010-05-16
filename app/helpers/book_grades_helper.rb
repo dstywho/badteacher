@@ -1,0 +1,2 @@
+module BookGradesHelper
+end

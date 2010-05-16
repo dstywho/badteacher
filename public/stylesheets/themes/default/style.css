@@ -1,0 +1,143 @@
+﻿.bt_body
+{
+    background-color: #5A5A5A;
+    font-family: Tahoma, Verdana, Arial, Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bt_header
+{
+    background: #EC870E url(images/header_grad.png) repeat-x;
+    height: 134px;
+    
+}
+
+.bt_framing
+{
+    width: 980px;
+    margin: 0px auto 0px auto;
+    background-color: #000000;
+}
+
+.bt_container
+{
+    _height: 600px;
+    min-height: 600px;
+}
+
+.bt_footer
+{
+    _height: 50px;
+    min-height: 50px;
+}
+
+.bt_logo_link
+{
+    display: block;
+    background-image: url(images/bad_teacher_logo.png);
+    height: 133px;
+    width: 563px;
+    margin-left: 20px;
+    float: left;
+}
+
+a, a:link, a:visited, a:hover, a:active
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.bt_left_nav
+{
+    float:left;
+    width: 180px;
+    background-color: #000000;
+}
+
+.bt_question_mark
+{
+    background-image: url(images/question_mark.png);
+    width: 102px;
+    height: 190px;
+    position: relative;
+    left: 580px;
+}
+
+.bt_left_nav_links_list
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bt_left_nav_links_list li
+{
+    margin-bottom: 15px;
+}
+
+.bt_main_content
+{
+    background-color: #FFFFFF;
+    margin-left: 180px;
+    border-left: solid 4px #EC870E;
+}
+
+.bt_subheader
+{
+    border-left: solid 4px #EC870E;
+    background-color: #000000;
+    height: 56px;
+    width: 796px;
+    float:left;
+    
+}
+
+.bt_useraccess_link_list li
+{
+    margin-top: 15px;
+}
+
+.bt_register_link
+{
+    height: 22px;
+    float: left;
+    margin-left: 20px;
+    width: 79px;
+    background-image: url(images/user_acess.png);
+}
+
+.bt_login_link
+{
+    height: 22px;
+    float: left;
+    margin-left: 20px;
+    background-image: url(images/user_acess.png);
+    background-position: 0px -22px;
+    width: 50px;
+}
+
+.bt_logout_link
+{
+    height: 22px;
+    float: left;
+    margin-left: 20px;
+    background-image: url(images/user_acess.png);
+    background-position: 0px -44px;
+    width: 63px;
+}
+
+.btm_logged_in .bt_login_link,
+.btm_logged_in .bt_register_link
+{
+    display: none;
+}
+
+.btm_logged_out .bt_logout_link
+{
+    display: none;
+}

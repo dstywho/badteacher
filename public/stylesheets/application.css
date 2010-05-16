@@ -1,0 +1,18 @@
+p{
+  margin-bottom: 12px;
+}
+.bt_main_content{
+  padding: 14px;
+}
+
+.bt_main_content a{
+  color: orange;
+}
+
+.bt_main_content b{
+  color: gray;
+}
+
+#questions_show #answers{
+  margin-top: 18px;
+}

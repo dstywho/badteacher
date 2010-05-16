@@ -1,0 +1,10 @@
+<ul class="bt_left_nav_links_list">
+	<li><%= link_to "Ask a Question", questions_path(:new => true) %></li>
+  <li><%= link_to "Answer Questions", questions_path(:answered => false) %></li>
+  <li><%= link_to "Submit & Answer", new_question_path(:with_answer => true) %></li>
+  
+      <!--    <li><a href="" title="Ask a Question">Ask a Question</a></li>
+            <li><a href="" title="Get answers">Get answers</a></li>
+            <li><a href="" title="Share answers">Share answers</a></li>
+        -->    
+</ul>

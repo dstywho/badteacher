@@ -1,0 +1,17 @@
+<% if logged_in? %>
+	<ul class="bt_useraccess_link_list btm_logged_in">
+<% else %>
+	<ul class="bt_useraccess_link_list btm_logged_out">
+<% end %>
+
+    <li>
+       <%= link_to("", signup_path, :class => "bt_register_link") %>
+    </li>
+    <li>
+      <%= link_to "", login_path, :class => "bt_login_link" %>
+    </li>
+    <li>
+      <%= link_to "", logout_path, :class =>"bt_logout_link" %>
+    </li>
+</ul>
+
